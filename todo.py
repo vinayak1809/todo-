@@ -5,17 +5,16 @@ done = False
 class create_task:
     li = []
     di = {}
-    remove_task = {}
-    done2 = False
+    task = False
 
     def do():
 
         print("\n if done with entering task : type \"exit\"")
-        while not create_task.done2:
+        while not create_task.task:
             en = input(" enter the task : ").lower()
 
             if en == "exit":
-                create_task.done2 = True
+                create_task.task = True
             elif en:
                 create_task.li.append(en)
 
